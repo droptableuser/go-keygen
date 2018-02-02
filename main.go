@@ -35,7 +35,7 @@ func main() {
 
 	counter := 0
 	// at most 8 password characters are generated that way
-	for counter < 8 && counter < len(login) {
+	for counter <= 8 && counter < len(login) {
 		if counter == 0 {
 			// for the first password character use the first two characters of the username
 			x := keygen(int(login[counter]), int(login[counter+1]))
